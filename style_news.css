@@ -10,10 +10,11 @@ body {
 main {
     display: grid;
     grid-template-columns: 1fr 6fr;
-    grid-template-rows: 1fr 12fr;
+    grid-template-rows: 1fr 12fr 1fr;
     grid-template-areas:
        "a a"
-       "b c";
+       "b c"
+       "d d";
     height: 90vh;
     width: 100vw;
 }
@@ -39,7 +40,6 @@ main {
     justify-content: center;
     align-items: center;
     color: #343E3D;
-    text-indent: 5%;
 }
 
 header {
@@ -101,4 +101,57 @@ ul {
         justify-content: flex-start;
         align-items: center;
         padding-right: 30px;
+  }
+
+
+  footer {
+    width: 100%;
+    height: 150px;
+    background-color: #607466;
+    grid-area: d;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    font-size: 45px;
+  }
+
+  /* Style all font awesome icons */
+  .fa {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 70px;
+    height: 70px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 50%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 20px;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Linkedin */
+  .fa-linkedin {
+    background: white;
+    color: #343E3D;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: white;
+    color: #343E3D;
+  }
+
+  /* Email */
+  .fa-envelope {
+    background: white;
+    color: #343E3D;
   }
