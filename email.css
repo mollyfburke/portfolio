@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: 'ABeeZee', sans-serif;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 1fr 12fr 1fr;
+    grid-template-areas:
+       "a a"
+       "b c"
+       "d d";
+    height: 90vh;
+    width: 100vw;
+}
+
+#info {
+    grid-area: c;
+}
+
+#info h2 {
+    margin-bottom: 20px;
+}
+
+#info div {
+    border: solid 3px #607466;
+    padding: 50px;
+    margin: 10px;
+}
+
+#info p {
+    display: inline-flex;
+    width: 100%;
+    height: auto;
+    justify-content: left;
+    align-items: center;
+    color: #343E3D;
+}
+
+header {
+    background-color: #607466;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    font-family: 'Antonio', sans-serif;
+    padding: 10px;
+    width: 100%;
+    color: white;
+    padding: 50px;
+    font-size: xx-large;
+}
+
+section {
+    padding: 20px;
+}
+
+main h2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: medium;
+    color: #343E3D;
+}
+
+p, a {
+    line-height: 1.5em;
+}
+
+ul {
+    grid-area: b;
+    list-style-type: none;
+    margin: 0px;
+    padding: 20px;
+    background-color:#AEDCC0;
+  }
+
+  ul li {
+      margin: 20px;
+      font-size: 18px;
+  }
+
+  ul li a {
+    color: #343E3D;
+  }
+
+  .contactinfo {
+        grid-area: a;
+        display: flex;
+        flex-direction: row-reverse;
+        background-color: #343E3D;
+        height: 80px;
+        font-family: 'Antonio', sans-serif;
+        color: #AEDCC0;
+        padding: 5px;
+        font-size: small;
+        justify-content: flex-start;
+        align-items: center;
+        padding-right: 30px;
+  }
+
+
+  footer {
+    width: 100%;
+    height: 150px;
+    background-color: #607466;
+    grid-area: d;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    font-size: 45px;
+  }
+
+  /* Style all font awesome icons */
+  .fa {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 70px;
+    height: 70px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 50%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 20px;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Linkedin */
+  .fa-linkedin {
+    background: white;
+    color: #343E3D;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: white;
+    color: #343E3D;
+  }
+
+  /* Email */
+  .fa-envelope {
+    background: white;
+    color: #343E3D;
+  }
