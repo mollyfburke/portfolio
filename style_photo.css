@@ -21,16 +21,16 @@ main {
 
 #examples {
     grid-area: c;
-}
-
-#examples h2 {
-    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 #examples div {
     border: solid 3px #607466;
-    padding: 50px;
+    padding: 15px;
     margin: 10px;
+    width: 31%;
 }
 
 #examples p {
@@ -40,6 +40,11 @@ main {
     justify-content: center;
     align-items: center;
     color: #343E3D;
+}
+
+h4 {
+  font-size: small;
+  font-family: 'Franklin Gothic Medium', Arial, sans-serif;
 }
 
 header {
@@ -164,3 +169,15 @@ ul {
     background: white;
     color: #343E3D;
   }
+
+  @media screen and (max-width:1200px) {
+    #examples div {
+        width: 46%;
+    }
+}
+
+@media screen and (max-width:800px) {
+  #examples div {
+        width: 100%;
+    }
+}

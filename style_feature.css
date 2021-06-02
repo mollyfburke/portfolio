@@ -62,9 +62,18 @@ section {
 }
 
 main h2 {
-    font-family: 'Roboto Slab', serif;
-    font-size: medium;
-    color: #343E3D;
+  font-family: 'Roboto Slab', serif;
+  font-size: x-large;
+  color: #343E3D;
+}
+
+h3 {
+  font-size: small;
+  font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+}
+
+h4 {
+  font-size: medium;
 }
 
 p, a {

@@ -1,7 +1,8 @@
 <html lang="en">
    <head>
         <!-- stylesheets and metadata go here -->
-       <title>Photo</title>       
+       <title>Photo</title>
+       <script src="photos/javascript-image-zoom-on-click/js/zooming.min.js"></script>       
        <link rel="stylesheet" href="style_photo.css">
        <link rel="preconnect" href="https://fonts.gstatic.com"> 
         <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Antonio:wght@700&family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
@@ -16,67 +17,84 @@
             <h1>Photo</h1>
         </div>
          <section id="examples">
-             <h2>Examples</h2>
-                <div>
-                    <img src="photos/img_0001.jpg">
-                    <p>Senior Daniel Ribeiro smashes the ball to the other side. DHS lost to Vacaville Christian, 3 to 1.<br>April 20, 2018.<br></p>
+                <div class="value-img">
+                <img id="img-default" src="https://northwestern.box.com/shared/static/f4r2v2y3kdlpzrujyvye07r40i1lvfia.jpg" data-action="zoom" data-original="https://northwestern.box.com/shared/static/f4r2v2y3kdlpzrujyvye07r40i1lvfia.jpg"/>
+                <p>Senior Daniel Ribeiro smashes the ball to the other side. DHS lost to Vacaville Christian, 3 to 1.</p>
+                    <h4>April 20, 2018.</h4>
                 </div>
-                <div>
-                    <img src="photos/img_0004.jpg">
-                    <p>Junior Thomas Venner falls after diving for the ball during the men’s volleyball game on Friday, April 20.<br>April 20, 2018.</p>
+                <div class="value-img">
+                    <img id="img-default" src="https://northwestern.box.com/shared/static/r1sv05dkc0qu34ohseqxymyhikom6pzu.jpg" data-action="zoom" data-original="https://northwestern.box.com/shared/static/r1sv05dkc0qu34ohseqxymyhikom6pzu.jpg"/>
+                    <p>Junior Thomas Venner falls after diving for the ball during the men's volleyball game on Friday, April 20.</p>
+                    <h4>April 20, 2018.</h4>
                 </div>
-                <div>
-                    <img src="photos/img_2798.jpg">
-                    <p>The Environmental Club and Wildlife Conservation Club fundraised $177 through their movie night on Dec. 1.<br>Dec. 4, 2017.</p>
+                <div class="value-img">
+                    <img id="img-default" src="https://northwestern.box.com/shared/static/8k6wxrm3pgqdul6xwe1l261rhjg4gmcs.jpg" data-action="zoom" data-original="https://northwestern.box.com/shared/static/8k6wxrm3pgqdul6xwe1l261rhjg4gmcs.jpg"/>
+                    <p>The Environmental Club and Wildlife Conservation Club fundraised $177 through their movie night on Dec. 1.</p>
+                    <h4>Dec. 4, 2017.</h4>
                 </div>
-                <div>
-                    <img src="photos/img_3383.jpg">
+                <div class="value-img">
+                    <img id="img-default" src="https://northwestern.box.com/shared/static/qxrn1zd7j9cu8vqhmhaui83nj9o424bx.jpg" data-action="zoom" data-original="https://northwestern.box.com/shared/static/qxrn1zd7j9cu8vqhmhaui83nj9o424bx.jpg"/>
                     <p>Members of the JV relay cheer on their teammate during a swim meet against Sheldon. Both men and women came out victorious.<br>March 22, 2018.</p>
+                    <h4>March 22, 2018.</h4>
                 </div>
-                <div>
-                    <img src="photos/img_3384.jpg">
-                    <p>On March 7, the Blue Devil swim team defeated Elk Grove, 119-39 for women and 104-45 for men.<br>March 7, 2018.</p>
+                <div class="value-img">
+                    <img id="img-default" src="https://northwestern.box.com/shared/static/0qjjcva6rqrbiy7l9ywscya3uebbvx86.jpg" data-action="zoom" data-original="https://northwestern.box.com/shared/static/0qjjcva6rqrbiy7l9ywscya3uebbvx86.jpg"/>
+                    <p>On March 7, the Blue Devil swim team defeated Elk Grove, 119-39 for women and 104-45 for men.</p>
+                    <h4>March 7, 2018.</h4>
                 </div>
-                <div>
-                    <img src="photos/img_3654.jpg">
-                    <p>Flowers and other gifts were placed outside the Davis Police Department on the morning following the death of Officer Natalie Corona.<br>Jan. 10, 2019.</p>
+                <div class="value-img">
+                    <img id="img-default" src="https://northwestern.box.com/shared/static/fjq2k9bz1gip4ki97tjtolvt61dmdvnp.jpg" data-action="zoom" data-original="https://northwestern.box.com/shared/static/fjq2k9bz1gip4ki97tjtolvt61dmdvnp.jpg"/>
+                    <p>Flowers and other gifts were placed outside the Davis Police Department on the morning following the death of Officer Natalie Corona.</p>
+                    <h4>Jan. 10, 2019.</h4>
                 </div>
-                <div>
-                    <img src="photos/img_3681.jpg">
-                    <p>Gifts and messages of support for the Davis Police Department came from all over, including a banner signed by many elementary school kids.<br>Jan. 10, 2019.</p>
+                <div class="value-img">
+                    <img id="img-default" src="https://northwestern.box.com/shared/static/8rz99a82yo9ztr6zzja98jbu2biea5v8.jpg" data-action="zoom" data-original="https://northwestern.box.com/shared/static/8rz99a82yo9ztr6zzja98jbu2biea5v8.jpg"/>
+                    <p>Gifts and messages of support for the Davis Police Department came from all over, including a banner signed by many elementary school kids.</p>
+                    <h4>Jan. 10, 2019.</h4>
                 </div>
-                <div>
-                    <img src="photos/img_3795.jpg">
-                    <p>Varsity women dive in for the 200 individual medley race for the DHS swim meet on March 7.<br>March 7, 2018.</p>
+                <div class="value-img">
+                    <img id="img-default" src="https://northwestern.box.com/shared/static/yeur2h9nhaf175co6ijgvr5w7fjuu4lf.jpg" data-action="zoom" data-original="https://northwestern.box.com/shared/static/yeur2h9nhaf175co6ijgvr5w7fjuu4lf.jpg"/>
+                    <p>Varsity women dive in for the 200 individual medley race for the DHS swim meet on March 7.</p>
+                    <h4>March 7, 2018.</h4>
                 </div>
-                <div>
-                    <img src="photos/img_4175-1.jpg">
-                    <p>Students explore gap year and career opportunities during the annual lunchtime career fair.<br>March 12, 2019.</p>
+                <div class="value-img">
+                    <img id="img-default" src="https://northwestern.box.com/shared/static/vzh56aysyprxwj1erfb3yibvlyurtqkh.jpg" data-action="zoom" data-original="https://northwestern.box.com/shared/static/vzh56aysyprxwj1erfb3yibvlyurtqkh.jpg">
+                    <p>Students explore gap year and career opportunities during the annual lunchtime career fair.</p>
+                    <h4>March 12, 2019.</h4>
                 </div>
-                <div>
-                    <img src="photos/img_4176-1.jpg">
-                    <p>Julie Clayton organized a career fair, allowing students to explore jobs during lunch and even pick up applications.<br>March 12, 2019.</p>
+                <div class="value-img">
+                    <img id="img-default" src="https://northwestern.box.com/shared/static/lum5sl8e2e9bld222l8evmsnui91osso.jpg" data-action="zoom" data-original="https://northwestern.box.com/shared/static/lum5sl8e2e9bld222l8evmsnui91osso.jpg"/>
+                    <p>Julie Clayton organized a career fair, allowing students to explore jobs during lunch and even pick up applications.</p>
+                    <h4>March 12, 2019.</h4>
                 </div>
-                <div>
-                    <img src="photos/img_4200-1.jpg">
-                    <p>Paradise band director Bob Schofield leads the combined Davis High and Paradise music programs in a rehearsal prior to the festival the following day.<br>March 18, 2019.</p>
+                <div class="value-img">
+                    <img id="img-default" src="https://northwestern.box.com/shared/static/ul5kmbxtaionznayo8ffpo5fm74uo8a5.jpg" data-action="zoom" data-original="https://northwestern.box.com/shared/static/ul5kmbxtaionznayo8ffpo5fm74uo8a5.jpg"/>
+                    <p>Paradise band director Bob Schofield leads the combined Davis High and Paradise music programs in a rehearsal prior to the festival the following day.</p>
+                    <h4>March 18, 2019.</h4>
                 </div>
-                <div>
-                    <img src="photos/img_5114.jpg">
-                    <p>Seniors Rachel Hedman and Silas Kirsch won the Gordon H. True Service Cup, the final award of the night.<br>June 7, 2019.</p>
+                <div class="value-img">
+                    <img id="img-default" src="https://northwestern.box.com/shared/static/9djifue1njqzl6wdnsmcw0eo6ce6lgtq.jpg" data-action="zoom" data-original="https://northwestern.box.com/shared/static/9djifue1njqzl6wdnsmcw0eo6ce6lgtq.jpg"/>
+                    <p>Seniors Rachel Hedman and Silas Kirsch won the Gordon H. True Service Cup, the final award of the night.</p>
+                    <h4>June 7, 2019.</h4>
                 </div>
-                <div>
-                    <img src="photos/img_5324.jpg">
-                    <p>Senior Tiya Kamba-Griffin and junior Emma Dean played victims in a car crash scene during the Every 15 Minutes demonstration.<br>May 1, 2019.</p>
+                <div class="value-img">
+                    <img id="img-default" src="https://northwestern.box.com/shared/static/wjdp7qmyr8gcb0elrsizueu52xhty1dv.jpg" data-action="zoom" data-original="https://northwestern.box.com/shared/static/wjdp7qmyr8gcb0elrsizueu52xhty1dv.jpg"/>
+                    <p>Senior Tiya Kamba-Griffin and junior Emma Dean played victims in a car crash scene during the Every 15 Minutes demonstration.</p>
+                    <h4>May 1, 2019.</h4>
                 </div>
-                <div>
-                    <img src="photos/img_5325.jpg">
-                    <p>Students observe as a mock car crash occurs during passing period as part of the Every 15 Minutes program against drunk driving.<br>May 1, 2019.</p>
+                <div class="value-img">
+                    <img id="img-default" src="https://northwestern.box.com/shared/static/zp318bhazr66i8qgk5gltjq9a7x54qj0.jpg" data-action="zoom" data-original="https://northwestern.box.com/shared/static/zp318bhazr66i8qgk5gltjq9a7x54qj0.jpg"/>
+                    <p>Students observe as a mock car crash occurs during passing period as part of the Every 15 Minutes program against drunk driving.</p>
+                    <h4>May 1, 2019.</h4>
                 </div>
-                <div>
-                    <img src="photos/img_5326.jpg">
-                    <p>Track and field athletes warm-up prior to beginning practice. The team held tryouts for the first time and have noticed improvements in attendance.<br>Feb. 24, 2019.</p>
+                <div class="value-img">
+                    <img id="img-default" src="https://northwestern.box.com/shared/static/eiaczd7zbs9teod70jpi0j6xwadop391.jpg" data-action="zoom" data-original="https://northwestern.box.com/shared/static/eiaczd7zbs9teod70jpi0j6xwadop391.jpg"/>
+                    <p>Track and field athletes warm-up prior to beginning practice. The team held tryouts for the first time and have noticed improvements in attendance.</p>
+                    <h4>Feb. 24, 2019.</h4>
                 </div>
+                <script>
+                    new Zooming().listen('img')
+                </script>
          </section>
          <ul id="menu">
              <li><a href="index.html">Home</a></li>

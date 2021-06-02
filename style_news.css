@@ -33,11 +33,10 @@ main {
     margin: 10px;
 }
 
-#examples p {
+#examples a {
     display: inline-flex;
     width: 100%;
     height: auto;
-    justify-content: center;
     align-items: center;
     color: #343E3D;
 }
@@ -62,9 +61,18 @@ section {
 }
 
 main h2 {
-    font-family: 'Roboto Slab', serif;
-    font-size: medium;
-    color: #343E3D;
+  font-family: 'Roboto Slab', serif;
+  font-size: x-large;
+  color: #343E3D;
+}
+
+h3 {
+  font-size: small;
+  font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+}
+
+h4 {
+  font-size: medium;
 }
 
 p, a {
