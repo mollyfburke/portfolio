@@ -10,7 +10,7 @@ body {
 main {
     display: grid;
     grid-template-columns: 1fr 6fr;
-    grid-template-rows: 1fr 12fr 1fr;
+    grid-template-rows: 1fr auto 1fr;
     grid-template-areas:
        "a a"
        "b c"
