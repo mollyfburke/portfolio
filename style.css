@@ -55,12 +55,18 @@ main {
 
 #resume div {
     display: inline-flex;
-    width: 100%;
+    width: 300px;
     height: auto;
     justify-content: center;
     align-items: center;
     border: solid 3px #607466;
     margin: 10px;
+    background-color: #607466;
+    padding: 15px;
+}
+
+#resume a {
+    color: white;
 }
 
 header {

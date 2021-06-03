@@ -21,6 +21,9 @@ main {
 
 #examples {
   grid-area: c;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 #examples h2 {
@@ -28,18 +31,10 @@ main {
 }
 
 #examples div {
+    width: fit-content;
     border: solid 3px #607466;
     padding: 50px;
     margin: 10px;
-}
-
-#examples a {
-    display: inline-flex;
-    width: 100%;
-    height: auto;
-    justify-content: center;
-    align-items: center;
-    color: #343E3D;
 }
 
 header {
@@ -55,6 +50,13 @@ header {
     color: white;
     padding: 50px;
     font-size: xx-large;
+}
+
+iframe, video {
+  min-width: 600px;
+  min-height: 450px;
+  max-width: 600px;
+  height: auto;
 }
 
 section {
